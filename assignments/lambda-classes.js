@@ -45,11 +45,11 @@ class Instructor extends Person {
         this.catchPhrase= attributes.catchPhrase
     }
         demo (sbjct) {
-            return `Today we learned about ${subject}.`
+            return (`Today we learned about ${sbjct}.`)
         }
 
-        grade ({student}, sbjct){
-            return `${student.name} receives a perfect score on ${subject}`
+        grade ({name}, sbjct){
+            return `${this.name} receives a perfect score on ${sbjct}`
         }
 }
 
@@ -120,7 +120,7 @@ const RyanH = new Instructor ({
     location: 'Concord', 
     specialty: 'Advanced JavaScript', 
     favLanguage: 'Semantic HTML5', 
-    catchPhrase: 'Get in, Loser- we are goin coding'
+    catchPhrase: "Get in, Loser- we're goin coding"
 }); 
 
 const Itel = new ProjectManager ({
@@ -143,9 +143,9 @@ const Marianna = new ProjectManager ({
 console.log(Ash); 
 console.log(Hui.speak()); 
 console.log(Rikei.listsSubjects());
-console.log(Britt.demo(ReactJSX));
-console.log(JoshK.grade(Ash, AccesibleHTML)); 
+console.log(BrittH.demo('ReactJSX'));
+console.log(JoshK.grade(Ash, 'AccesibleHTML')); 
 console.log(RyanH.catchPhrase); 
-console.log(Itel.stantUp(web25_ah)); 
-console.log(Marianna.debugsCode(Hui, mediaBreaksAndYou));  
+console.log(Itel.stantUp('web25_ah')); 
+console.log(Marianna.debugsCode(Hui, 'mediaBreaksAndYou'));  
 
